@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Big+Shoulders+Stencil+Text:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    letter-spacing: 0.1rem;
+}
+
+:root
+{
+    --hover-color: #cdcdcd;
+}
+
+
+/*************************************************** NAVBAR CLASS */
+
+
+a.navbar-brand.animanga
+{
+    color: #282828;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.60);
+    transition: 0.3s;
+    animation: glow 2s linear infinite;
+}
+
+a.navbar-brand.animanga:hover {
+    letter-spacing: 0.3rem;
+}
+
+.fas, .far, .fab
+{
+    font-size: 1.4rem;
+    transition: 0.4s;
+}
+.fas:hover, .far:hover, .fab:hover
+{
+    filter: drop-shadow(0 0 2px rgba(255, 0, 0, 0.52));
+    transform: scale(1.2);
+}
+
+
+/*************************************************** BANNER CLASS */
+
+
+section.banner
+{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+/*************************************************** KEYFRAMES */
+
+
+@keyframes glow {
+    0%,
+    100% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.60);
+    }
+
+    50% {
+        text-shadow: 0 0 2px rgba(255, 0, 0, 0.78);
+
+    }
+}
