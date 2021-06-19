@@ -8,5 +8,6 @@ J'ai choisi de faire un site basé entierement sur Lumen afin de découvrir son 
 
 
 ## License
-yohann.hommet@outlook.fr
+yohann.hommet@outlook.fr  
+
 Licensed under the [MIT license](https://opensource.org/licenses/MIT).
