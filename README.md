@@ -1,6 +1,6 @@
 # Animanga
-### based on Lumen PHP Framework
-### with https://kitsu.docs.apiary.io/ API
+#### based on Lumen PHP Framework
+#### with https://kitsu.docs.apiary.io/ API
 
 ## Informations
 
