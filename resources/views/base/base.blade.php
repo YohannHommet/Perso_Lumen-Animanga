@@ -21,9 +21,7 @@
     @include('_partials._navbar')
 
     <main class="main" role="main">
-
         @yield('content')
-
     </main>
 
     @include('_partials._footer')
