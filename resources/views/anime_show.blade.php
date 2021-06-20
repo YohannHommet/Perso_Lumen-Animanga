@@ -73,7 +73,7 @@
                     </div>
                 </div>
 
-                <div class="col-9">
+                <div class="col-9 d-block justify-content-between">
                     <div class="p-4 custom-card">
                         <h3 class="m-4 pb-1 text-end">Synopsis</h3>
 
@@ -81,7 +81,8 @@
                             {{ $response['attributes']['synopsis'] }}
                         </p>
                     </div>
-                    <div class="mt-5 custom-card anime-custom-bg" style="background-image: url('{{ $response['attributes']['posterImage']['large'] }}');">
+
+                    <div class="mt-5 custom-card anime-custom-bg align-self-end" style="background-image: url('{{ $response['attributes']['posterImage']['large'] }}');">
                     </div>
                 </div>
             </div>
@@ -109,8 +110,6 @@
                     <h5 class="text-center my-5 py-2 border-top border-bottom text-muted fs-6">Last update {{ $response['attributes']['updatedAt'] }}</h5>
                 </div>
             </div>
-
-
 
         </div>
     </section>

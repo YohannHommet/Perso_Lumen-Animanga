@@ -1,9 +1,7 @@
 <header>
 
     <nav class="px-3 py-3 bg-white text-dark shadow">
-        <div class="container-fluid">
-
-            <div class="d-block flex-wrap align-items-center justify-content-center">
+        <div class="container-fluid d-block flex-wrap align-items-center justify-content-center">
 
                 <ul class="nav col-12 col-lg-auto my-2 justify-content-center align-items-center my-md-0">
                     <li class="nav-item px-1">
@@ -22,7 +20,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+
     </nav>
 
 </header>
