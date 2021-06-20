@@ -30,3 +30,4 @@ $router->get(
         'as' => "anime-show",
     ]
 );
+

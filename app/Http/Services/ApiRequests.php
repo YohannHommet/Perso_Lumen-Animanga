@@ -16,6 +16,11 @@ class ApiRequests
      */
     public static function get(string $baseUrl, string $endpoint, $data = null)
     {
+
+//      Headers
+//      Accept: application/vnd.api+json
+//      Content-Type: application/vnd.api+json
+
         try {
             $response = Http::get($baseUrl . $endpoint, $data);
         } catch (\Exception $e) {

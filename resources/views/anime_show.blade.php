@@ -18,7 +18,7 @@
             <h1 class="pb-3 border-bottom text-end my-5">{{ $response['attributes']['canonicalTitle'] }}</h1>
 
             <div class="row my-5">
-                <div class="col-3">
+                <div class="col-md-4 col-lg-3 mb-xs-4 mb-sm-4 mb-lg-0 stats">
                     <div class="p-4 custom-card h-100">
                         <h4 class="h3 text-center m-4 pb-1 border-bottom">Anime Stats</h4>
 
@@ -73,7 +73,7 @@
                     </div>
                 </div>
 
-                <div class="col-9 d-block justify-content-between">
+                <div class="col-md-8 col-lg-9 mb-md-4">
                     <div class="p-4 custom-card">
                         <h3 class="m-4 pb-1 text-end">Synopsis</h3>
 
@@ -88,19 +88,19 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col-7 pe-5">
+                <div class="col-md-12 col-lg-7 pe-5">
                     <h2 class="my-5 pb-1 border-bottom text-start">Description</h2>
                 </div>
             </div>
 
             <div class="row mb-5 gx-4">
-                <div class="col-7 pe-5 text-justify">
+                <div class="col-md-12 col-lg-7 pe-sm-0 pe-lg-5 text-justify">
                     <p class="fst-normal lh-base fs-5" style="text-align: justify;">
                         {{ $response['attributes']['description'] }}
                     </p>
                 </div>
 
-                <div class="col-5">
+                <div class="col-md-12 col-lg-5 mt-sm-4 mt-lg-0">
                     <iframe class="yt-video" src="https://www.youtube.com/embed/{{ $response['attributes']['youtubeVideoId'] }}"></iframe>
                 </div>
             </div>

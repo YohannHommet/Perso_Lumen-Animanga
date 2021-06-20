@@ -17,4 +17,5 @@ class AnimeController extends Controller
             "response" => $anime['data']
         ]);
     }
+
 }
