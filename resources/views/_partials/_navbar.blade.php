@@ -7,25 +7,16 @@
 
                 <ul class="nav col-12 col-lg-auto my-2 justify-content-center align-items-center my-md-0">
                     <li class="nav-item px-1">
-                        <a href="#" class="nav-link text-dark nav-hover" title data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
-                            <i class="fas fa-laptop-house"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a href="#" class="nav-link text-dark nav-hover" title="Accueil">
+                        <a href="#" class="nav-link text-dark nav-hover" title="Top Rated">
                             <i class="far fa-grin-alt"></i>
                         </a>
                     </li>
                     <li class="nav-item px-4">
                         <a class="navbar-brand mx-0 px-2 animanga" href="{{ @route("home") }}">Animanga</a>
                     </li>
+
                     <li class="nav-item px-1">
-                        <a href="#" class="nav-link text-dark nav-hover m-auto" title="Accueil">
-                            <i class="fab fa-old-republic"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a href="#" class="nav-link text-dark nav-hover" title="Accueil">
+                        <a href="#" class="nav-link text-dark nav-hover" title="Contact">
                             <i class="far fa-user"></i>
                         </a>
                     </li>
