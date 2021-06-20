@@ -6,7 +6,6 @@
 
 @section('content')
 
-    @dump($response)
     <div class="container-fluid p-0 m-0 g-0">
         <section class="banner" style="background-image: url('{{ $response['attributes']['coverImage']['original'] }}');">
 
@@ -105,7 +104,12 @@
                 </div>
             </div>
 
-            <h5 class="text-center my-5 py-2 border-top border-bottom text-muted fs-6">Last update {{ $response['attributes']['updatedAt'] }}</h5>
+            <div class="row mb-5">
+                <div class="col-6 mx-auto">
+                    <h5 class="text-center my-5 py-2 border-top border-bottom text-muted fs-6">Last update {{ $response['attributes']['updatedAt'] }}</h5>
+                </div>
+            </div>
+
 
 
         </div>

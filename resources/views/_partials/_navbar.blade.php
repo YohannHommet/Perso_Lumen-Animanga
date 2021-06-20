@@ -7,7 +7,7 @@
 
                 <ul class="nav col-12 col-lg-auto my-2 justify-content-center align-items-center my-md-0">
                     <li class="nav-item px-1">
-                        <a href="#" class="nav-link text-dark nav-hover" title="Top Rated">
+                        <a href="" class="nav-link text-dark nav-hover" title="Top Rated">
                             <i class="far fa-grin-alt"></i>
                         </a>
                     </li>
@@ -16,7 +16,7 @@
                     </li>
 
                     <li class="nav-item px-1">
-                        <a href="#" class="nav-link text-dark nav-hover" title="Contact">
+                        <a href="" class="nav-link text-dark nav-hover" title="Contact">
                             <i class="far fa-user"></i>
                         </a>
                     </li>
