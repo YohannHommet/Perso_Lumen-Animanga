@@ -13,25 +13,34 @@
     <section class="anime">
         <div class="container">
 
-            <h1 class="pb-3 border-bottom text-end mt-5">Anime selection...</h1>
+            <h1 class="pb-3 border-bottom text-end mt-5 pt-5">Anime selection...</h1>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
-                @foreach($response as $anime)
-                    <div class="col">
-                        <div class="card-cover h-100 p-4 overflow-hidden text-white home-cards" style="background-image: url({{ $anime['attributes']['posterImage']['medium']}}); background-position: center center; background-repeat: no-repeat; background-size: cover">
-                            <div class="d-flex flex-column h-100 text-white text-shadow-1 justify-content-between">
-                                <h2 class="py-5 my-5 display-6 lh-1 fw-bold">{{ $anime['attributes']['canonicalTitle'] }}</h2>
-                                <ul class="d-flex list-unstyled mt-5 mb-0">
-                                    <li class="d-flex align-items-center ms-auto">
-                                        <a href="{{ @route("anime-show", ['id' => $anime['id']]) }}">
-                                            <i class="fas fa-angle-double-right text-white" style="font-size: 1.8rem!important;"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                @foreach($animeResponse as $anime)
+                    @include('_partials._cards._anime_cards')
+                @endforeach
+            </div>
+
+        </div>
+    </section>
+
+    <section class="citations">
+        <div class="container-fluid p-0 m-0 g-0">
+
+        @include('_partials._citations._citations')
+
+        </div>
+    </section>
+
+    <section class="anime">
+        <div class="container">
+
+            <h1 class="pb-3 border-bottom text-start mt-5 pt-5">Manga selection...</h1>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                @foreach($mangaResponse as $manga)
+                    @include('_partials._cards._manga_cards')
                 @endforeach
             </div>
 

@@ -31,3 +31,10 @@ $router->get(
     ]
 );
 
+$router->get(
+    '/manga/{id}',
+    [
+        'uses' => 'MangaController@show',
+        'as' => "manga-show",
+    ]
+);

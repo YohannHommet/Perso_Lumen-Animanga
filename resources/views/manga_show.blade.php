@@ -6,6 +6,6 @@
 
 @section('content')
 
-    @include('_partials._show._show', ['title' => "Anime Stats"])
+    @include('_partials._show._show', ['title' => "Manga Stats"])
 
 @endsection
