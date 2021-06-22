@@ -1,5 +1,5 @@
 
-<footer class="footer border-top p-5">
+<footer class="footer border-top p-5 mt-5">
     <div class="row">
         <div class="col text-center">
 
