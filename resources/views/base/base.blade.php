@@ -32,6 +32,7 @@
     </script>
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/modules/citations.js"></script>
+    <script src="/assets/js/modules/filter.js"></script>
 
 </body>
 </html>

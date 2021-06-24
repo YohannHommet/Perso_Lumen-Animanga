@@ -1,6 +1,7 @@
 <?php
 
 /** @var Router $router */
+
 use Laravel\Lumen\Routing\Router;
 
 /*
@@ -14,7 +15,6 @@ use Laravel\Lumen\Routing\Router;
 |
 */
 
-
 $router->get(
     '/',
     [
@@ -23,6 +23,10 @@ $router->get(
     ]
 );
 
+
+/**
+ * Get a anime show page based on ID
+ */
 $router->get(
     '/anime/{id}',
     [
@@ -31,6 +35,9 @@ $router->get(
     ]
 );
 
+/**
+ * Get a manga show page based on ID
+ */
 $router->get(
     '/manga/{id}',
     [

@@ -2,6 +2,7 @@
 
 namespace App\Http\Services;
 
+use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
 
 
@@ -16,10 +17,7 @@ class ApiRequests
      */
     public static function get(string $baseUrl, string $endpoint, $data = null)
     {
-
-//      Headers
-//      Accept: application/vnd.api+json
-//      Content-Type: application/vnd.api+json
+        /** @var Response $response */
 
         try {
             $response = Http::get($baseUrl . $endpoint, $data);

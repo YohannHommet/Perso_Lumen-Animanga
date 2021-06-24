@@ -3,6 +3,7 @@ const app =
         init: () =>
         {
             citations.init();
+            filter.init();
         }
     }
 

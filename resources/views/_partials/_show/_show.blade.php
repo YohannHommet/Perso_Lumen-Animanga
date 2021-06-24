@@ -1,5 +1,5 @@
 
-<div class="container-fluid p-0 m-0 g-0">
+<div class="container-fluid p-0 m-0 g-0 js-filter">
     <section class="banner" style="background-image: url('{{ $response['attributes']['coverImage']['original'] ?? $response['attributes']['posterImage']['original'] ?? "background unavailable" }}');">
 
     </section>
@@ -9,6 +9,7 @@
     <div class="container">
 
         <h1 class="pb-3 border-bottom text-end my-5">{{ $response['attributes']['canonicalTitle'] ?? $response['attributes']['titles']['en_jp'] ?? "???" }}</h1>
+
 
         <div class="row my-5">
             <div class="col-md-4 col-lg-3 mb-xs-4 mb-sm-4 mb-lg-0 stats">

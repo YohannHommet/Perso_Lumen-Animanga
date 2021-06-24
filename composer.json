@@ -9,7 +9,8 @@
         "ext-json": "*",
         "flipbox/lumen-generator": "^8.2",
         "guzzlehttp/guzzle": "^7.3",
-        "laravel/lumen-framework": "^8.0"
+        "laravel/lumen-framework": "^8.0",
+      "ext-http": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

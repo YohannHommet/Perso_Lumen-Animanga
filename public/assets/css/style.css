@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Big Shoulders Stencil Text', cursive;
     letter-spacing: 0.1rem;
+    scroll-behavior: smooth;
 }
 
 :root
@@ -54,24 +55,36 @@ a.navbar-brand.animanga
 
 section.banner
 {
+    position: relative;
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
-
 
 /*************************************************** HOME CLASS */
 
 
 .home__cards
 {
+    position: relative;
     height: 380px !important;
     border-radius: 15px;
     box-shadow: 2px 2px 15px 2px rgba(127, 127, 127, 0.70),
                 -2px -2px 15px 2px rgba(255, 255, 255, 1);
     transition: 0.3s linear;
 }
+.home__cards:before
+ {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 100%;
+    background: linear-gradient(to right, #202020, transparent);
+ }
 
 .home__cards:hover
 {
@@ -113,11 +126,35 @@ section.banner
 
 .anime-custom-bg
 {
-    height: 220px;
+    position: relative;
+    height: 250px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+}
+
+.anime-custom-bg:before
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, white, transparent);
+    border-radius: 15px 15px 0 0;
+}
+
+.anime-custom-bg:after
+{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to top, white, transparent);
+    border-radius: 0 0 15px 15px;
 }
 
 .yt-video

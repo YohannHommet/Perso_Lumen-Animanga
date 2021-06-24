@@ -5,10 +5,13 @@ const citations =
         init: () =>
         {
             citations.handleNewApiRequest();
-            citations.randomButton.addEventListener('click', citations.handleNewApiRequest)
+            citations.randomButton.addEventListener('click', citations.handleNewApiRequest);
         },
 
 
+        /**
+         * Handle fetch to get a random quote from AnimeChan
+         */
         handleNewApiRequest: () =>
         {
             const fetchOptions = {
@@ -16,11 +19,9 @@ const citations =
                 mode: "cors",
                 cache: "no-cache"
             };
-
             const animechanApi = "https://animechan.vercel.app/api/random";
 
             const promise = fetch(animechanApi, fetchOptions);
-            promise.then();
             promise
                 .then(response => response.json())
                 .then(quote => citations.showRandomQuote(quote));
@@ -28,8 +29,7 @@ const citations =
 
 
         /**
-         *
-         * @param {JSON} quote Json response from API
+         * @property {JSON} quote Json response from API
          */
         showRandomQuote: (quote) =>
         {
@@ -37,9 +37,11 @@ const citations =
             const animeContentElement = document.querySelector('.js-quote-content');
             const animeAuthorElement  = document.querySelector('.js-quote-author');
 
-            animeTitleElement.textContent = quote.anime;
-            animeContentElement.textContent = quote.quote;
-            animeAuthorElement.textContent = quote.character;
+            if (animeTitleElement != null && animeContentElement != null && animeAuthorElement != null) {
+                animeTitleElement.textContent = quote.anime;
+                animeContentElement.textContent = quote.quote;
+                animeAuthorElement.textContent = quote.character;
+            }
 
         }
 

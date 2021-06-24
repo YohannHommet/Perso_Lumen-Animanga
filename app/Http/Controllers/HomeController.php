@@ -3,18 +3,34 @@
 namespace App\Http\Controllers;
 
 use App\Http\Services\ApiRequests;
+use Illuminate\Http\Request;
 
 
 class HomeController extends Controller
 {
 
-    public function home()
+    public function home(Request $request)
     {
-        // Request pour choper les anime et pour enlever le dernier pour en avoir 9 !
+        // Search Query based on Anime
+        if ($request->get('anime')) {
+            $searchParams = $_SERVER['APP_URL'];
+            $search = $request->get('anime');
+
+            $anime = ApiRequests::get("https://kitsu.io/api/edge/", "anime?filter[text]=" . $search);
+            $manga = ApiRequests::get("https://kitsu.io/api/edge/", "manga");
+            array_pop($manga['data']);
+
+            $searchParams = strtok($searchParams, "?");
+
+            return view('home', [
+                "animeResponse" => $anime['data'],
+                "mangaResponse" => $manga['data']
+            ]);
+
+        }
+
         $anime = ApiRequests::get("https://kitsu.io/api/edge/", "anime");
         array_pop($anime['data']);
-
-        // Request pour choper les anime et pour enlever le dernier pour en avoir 9 !
         $manga = ApiRequests::get("https://kitsu.io/api/edge/", "manga");
         array_pop($manga['data']);
 
@@ -22,5 +38,7 @@ class HomeController extends Controller
             "animeResponse" => $anime['data'],
             "mangaResponse" => $manga['data']
         ]);
+
+
     }
 }
