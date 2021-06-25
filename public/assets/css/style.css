@@ -25,6 +25,18 @@ p
 /*************************************************** NAVBAR CLASS */
 
 
+
+
+.nav-bar 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px 1px rgba(30, 30, 30, 0.15);
+    z-index: 100;
+}
+
 a.navbar-brand.animanga
 {
     color: #282828;
@@ -81,7 +93,7 @@ section.banner
     position: absolute;
     top: 0;
     left: 0;
-    width: 35px;
+    width: 25px;
     height: 100%;
     background: linear-gradient(to right, #dbdbdb, transparent);
  }

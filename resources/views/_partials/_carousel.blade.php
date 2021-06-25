@@ -1,4 +1,4 @@
-<div class="container-fluid p-0 m-0 g-0">
+<div class="container-fluid p-0 m-0 g-0" style="transform: translateY(80px);">
 
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
