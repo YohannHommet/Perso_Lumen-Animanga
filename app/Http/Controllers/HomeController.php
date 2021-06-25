@@ -13,20 +13,16 @@ class HomeController extends Controller
     {
         // Search Query based on Anime
         if ($request->get('anime')) {
-            $searchParams = $_SERVER['APP_URL'];
             $search = $request->get('anime');
 
             $anime = ApiRequests::get("https://kitsu.io/api/edge/", "anime?filter[text]=" . $search);
             $manga = ApiRequests::get("https://kitsu.io/api/edge/", "manga");
             array_pop($manga['data']);
 
-            $searchParams = strtok($searchParams, "?");
-
             return view('home', [
                 "animeResponse" => $anime['data'],
                 "mangaResponse" => $manga['data']
             ]);
-
         }
 
         $anime = ApiRequests::get("https://kitsu.io/api/edge/", "anime");
@@ -38,7 +34,6 @@ class HomeController extends Controller
             "animeResponse" => $anime['data'],
             "mangaResponse" => $manga['data']
         ]);
-
 
     }
 }
