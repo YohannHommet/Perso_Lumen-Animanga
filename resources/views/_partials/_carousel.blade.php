@@ -1,4 +1,4 @@
-<div class="container-fluid p-0 m-0 g-0" style="transform: translateY(80px);">
+<div class="container-fluid p-0 m-0 g-0">
 
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -12,7 +12,7 @@
                 <img src="assets/img/dabi_myheroacadmia.jpg" class="d-block w-100" alt="dabi_myheroacadamia">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Toya Todoroki aka Dabi</h3>
-                    <p>My Hero Academia</p>
+                    <h5 class="text-muted">My Hero Academia</p>
                 </div>
             </div>
             <div class="carousel-item">

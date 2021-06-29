@@ -35,6 +35,7 @@ $router->get(
     ]
 );
 
+
 /**
  * Get a manga show page based on ID
  */

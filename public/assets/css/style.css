@@ -25,9 +25,7 @@ p
 /*************************************************** NAVBAR CLASS */
 
 
-
-
-.nav-bar 
+.nav-bar
 {
     position: fixed;
     top: 0;
@@ -73,6 +71,7 @@ section.banner
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    margin-top: 79px;
 }
 
 /*************************************************** HOME CLASS */
@@ -114,6 +113,7 @@ section.banner
 .js-quote-title {
     color: rgb(243, 243, 243) !important;
 }
+
 .js-quote-content
 {
     color: rgb(143, 150, 157) !important;
@@ -196,6 +196,7 @@ section.banner
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    transform: translateY(100px);
 }
 
 .error__section_title

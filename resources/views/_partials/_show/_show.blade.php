@@ -1,7 +1,6 @@
 
 <div class="container-fluid p-0 m-0 g-0 js-filter">
     <section class="banner" style="background-image: url('{{ $response['attributes']['coverImage']['original'] ?? $response['attributes']['posterImage']['original'] ?? "background unavailable" }}');">
-
     </section>
 </div>
 

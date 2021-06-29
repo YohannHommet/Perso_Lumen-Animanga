@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <section class="carousel" role="banner">
+    <section class="carousel" role="banner" style="margin-top: 79px;">
 
         @include('_partials._carousel')
 
