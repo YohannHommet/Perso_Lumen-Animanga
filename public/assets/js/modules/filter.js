@@ -15,13 +15,16 @@ const filter =
             this.form.addEventListener('submit', filter.handleFormSubmit.bind(this));
         },
 
-
+        /**
+         * Handle event on form input
+         */
         handleFormSubmit: (e) =>
         {
             e.preventDefault();
             this.form = e.target;
             this.input = this.form.querySelector('.js-filter-input');
             filter.handleSearchRequest(this.input.value);
+            this.input.value = "";
         },
 
         /**
@@ -49,16 +52,15 @@ const filter =
                 })
                 .then(jsonResponse => {
                     const jsonElement = jsonResponse.data
-                    const homeCards = document.querySelectorAll('.home_cards')
+                    this.homeCards = document.querySelectorAll('.home_cards')
 
                     for (let i = 0; i < homeCards.length; i++) {
-                        homeCards[i].querySelector('.home__cards').style.background = "url(" + jsonElement[i].attributes.posterImage.medium + ")";
-                        homeCards[i].querySelector('.home__cards-title').textContent = jsonElement[i].attributes.canonicalTitle;
-                        homeCards[i].querySelector('.home__cards-link').setAttribute("href", "/anime/" + jsonElement[i].id)
+                        this.homeCards[i].querySelector('.home__cards').style.background = "url(" + jsonElement[i].attributes.posterImage.medium + ")";
+                        this.homeCards[i].querySelector('.home__cards-title').textContent = jsonElement[i].attributes.canonicalTitle;
+                        this.homeCards[i].querySelector('.home__cards-link').setAttribute("href", "/anime/" + jsonElement[i].id)
                     }
 
                 });
-
         }
 
     }

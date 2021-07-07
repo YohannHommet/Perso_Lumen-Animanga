@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Services\ApiRequests;
-use Symfony\Component\HttpFoundation\Request;
 
 
 class AnimeController extends Controller
