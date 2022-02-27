@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Http;
 
 class ApiRequests
 {
-
     /**
      * @param string $baseUrl
      * @param string $endpoint
