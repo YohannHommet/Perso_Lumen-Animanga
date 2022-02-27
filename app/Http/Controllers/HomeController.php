@@ -11,9 +11,9 @@ class HomeController extends Controller
 
     public function home(Request $request)
     {
-
         $anime = ApiRequests::get("https://kitsu.io/api/edge/", "anime");
         array_pop($anime['data']);
+
         $manga = ApiRequests::get("https://kitsu.io/api/edge/", "manga");
         array_pop($manga['data']);
 
