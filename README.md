@@ -1,6 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4674ce68-85e0-4964-b3e1-7de9c8ca31e5/deploy-status)](https://app.netlify.com/sites/animanga/deploys)
-  
-  
 # Animanga
 #### based on Lumen PHP Framework
 #### with https://kitsu.docs.apiary.io/ API
@@ -15,3 +12,6 @@ J'en ai profité pour utiliser une API qui renvoie des données sur les Anime et
 yohann.hommet@outlook.fr  
 
 Licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+### Links
+[Animanga](https://api-animanga.herokuapp.com/)
