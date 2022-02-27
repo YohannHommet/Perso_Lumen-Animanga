@@ -5,7 +5,7 @@
             <ul class="d-flex list-unstyled mt-5 mb-0">
                 <li class="d-flex align-items-center ms-auto">
                     <a href="{{ @route("manga-show", ['id' => $manga['id']]) }}">
-                    <i class="fas fa-angle-double-right text-white" style="font-size: 2.5rem!important;"></i>
+                    <i id="next" class="fas fa-angle-double-right text-white"></i>
                     </a>
                 </li>
             </ul>

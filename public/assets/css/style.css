@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Big+Shoulders+Stencil+Text:wght@100;300;400;500;600;700;800;900&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     font-size: 15px;
@@ -11,22 +10,19 @@
     scroll-behavior: smooth;
 }
 
-:root
-{
+:root {
     --hover-color: #cdcdcd;
 }
 
-p
-{
-    color: rgb(108 117 125)!important;
+p {
+    color: rgb(108 117 125) !important;
 }
 
 
 /*************************************************** NAVBAR CLASS */
 
 
-.nav-bar
-{
+.nav-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,8 +31,7 @@ p
     z-index: 100;
 }
 
-a.navbar-brand.animanga
-{
+a.navbar-brand.animanga {
     color: #282828;
     font-family: 'Amatic SC', cursive;
     font-size: 2.2rem;
@@ -48,13 +43,12 @@ a.navbar-brand.animanga
     animation: glow 2s linear infinite;
 }
 
-.fas, .far, .fab
-{
+.fas, .far, .fab {
     font-size: 1.4rem;
     transition: 0.4s;
 }
-.fas:hover, .far:hover, .fab:hover
-{
+
+.fas:hover, .far:hover, .fab:hover {
     filter: drop-shadow(0 0 2px rgba(255, 0, 0, 0.52));
     transform: scale(1.2);
 }
@@ -63,8 +57,7 @@ a.navbar-brand.animanga
 /*************************************************** BANNER CLASS */
 
 
-section.banner
-{
+section.banner {
     position: relative;
     height: 500px;
     background-repeat: no-repeat;
@@ -77,8 +70,7 @@ section.banner
 /*************************************************** HOME CLASS */
 
 
-.home__cards
-{
+.home__cards {
     position: relative;
     height: 380px !important;
     border-radius: 15px;
@@ -88,11 +80,11 @@ section.banner
     background-size: cover !important;
 
     box-shadow: 2px 2px 15px 2px rgba(127, 127, 127, 0.70),
-                -2px -2px 15px 2px rgba(255, 255, 255, 1);
+    -2px -2px 15px 2px rgba(255, 255, 255, 1);
     transition: 0.2s linear;
 }
-.home__cards:before
- {
+
+.home__cards:before {
     content: "";
     position: absolute;
     top: 0;
@@ -100,18 +92,16 @@ section.banner
     width: 25px;
     height: 100%;
     background: linear-gradient(to right, #dbdbdb, transparent);
- }
+}
 
-.home__cards:hover
-{
+.home__cards:hover {
     border-radius: 15px;
     box-shadow: 2px 2px 8px 2px rgba(127, 127, 127, 1),
     -2px -2px 10px 2px rgba(255, 255, 255, 1);
     transform: scale(0.99);
 }
 
-.home__cards-title
-{
+.home__cards-title {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -119,30 +109,32 @@ section.banner
     color: rgb(243, 243, 243) !important;
 }
 
-.js-quote-content
-{
+.js-quote-content {
     color: rgb(143, 150, 157) !important;
 }
 
-.js-quote-author
-{
+.js-quote-author {
     color: rgb(180, 187, 196) !important;
+}
+
+#next {
+    font-size: 3rem;
+    box-shadow: black;
+    filter: drop-shadow(3px 5px 7px black);
 }
 
 
 /*************************************************** ANIME SHOW CLASS */
 
 
-.custom-card
-{
+.custom-card {
     background: #ffffff;
     border-radius: 15px;
-    box-shadow:  5px 10px 28px rgba(217, 217, 217, 0.68),
+    box-shadow: 5px 10px 28px rgba(217, 217, 217, 0.68),
     -5px -10px 28px #ffffff;
 }
 
-.anime-custom-bg
-{
+.anime-custom-bg {
     position: relative;
     height: 250px;
     background-repeat: no-repeat;
@@ -150,8 +142,7 @@ section.banner
     background-position: center center;
 }
 
-.anime-custom-bg:before
-{
+.anime-custom-bg:before {
     position: absolute;
     content: "";
     top: 0;
@@ -162,8 +153,7 @@ section.banner
     border-radius: 15px 15px 0 0;
 }
 
-.anime-custom-bg:after
-{
+.anime-custom-bg:after {
     position: absolute;
     content: "";
     bottom: 0;
@@ -174,8 +164,7 @@ section.banner
     border-radius: 0 0 15px 15px;
 }
 
-.yt-video
-{
+.yt-video {
     width: 100%;
     min-height: 100%;
     border-radius: 15px;
@@ -185,15 +174,13 @@ section.banner
 /*************************************************** ERROR 404 */
 
 
-.error__container
-{
+.error__container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.error__section
-{
+.error__section {
     max-width: 100%;
     max-height: 100%;
     width: 80vw;
@@ -204,16 +191,14 @@ section.banner
     transform: translateY(100px);
 }
 
-.error__section_title
-{
+.error__section_title {
     display: flex;
     justify-content: center;
     align-items: end;
     margin-top: 4rem;
 }
 
-.error__section_link
-{
+.error__section_link {
     display: block;
     text-align: center;
 }
@@ -222,8 +207,7 @@ section.banner
 /*************************************************** FOOTER */
 
 
-.footer
-{
+.footer {
 
 }
 
@@ -231,25 +215,19 @@ section.banner
 /*************************************************** MEDIA QUERIES */
 
 
-@media (min-width: 768px)
-{
-    .yt-video
-    {
+@media (min-width: 768px) {
+    .yt-video {
         height: 250px;
     }
 }
 
 
-
-@media (min-width: 576px)
-{
-    .stats
-    {
+@media (min-width: 576px) {
+    .stats {
         margin-bottom: 1.5rem !important;
     }
 
-    .yt-video
-    {
+    .yt-video {
         height: 200px;
     }
 }
