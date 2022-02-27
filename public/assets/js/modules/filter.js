@@ -59,7 +59,6 @@ const filter =
                         this.homeCards[i].querySelector('.home__cards-title').textContent = jsonElement[i].attributes.canonicalTitle;
                         this.homeCards[i].querySelector('.home__cards-link').setAttribute("href", "/anime/" + jsonElement[i].id)
                     }
-
                 });
         }
 

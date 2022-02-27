@@ -1,10 +1,9 @@
 const app =
     {
-        init: () =>
-        {
+        init: () => {
             citations.init();
             filter.init();
-        }
-    }
+        },
+    };
 
-    document.addEventListener('DOMContentLoaded', app.init);
+document.addEventListener('DOMContentLoaded', app.init);
